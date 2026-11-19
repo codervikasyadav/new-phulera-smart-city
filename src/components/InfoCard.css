@@ -1,0 +1,114 @@
+.info-card {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-gov-card);
+}
+
+.info-card:hover {
+  box-shadow: var(--shadow-gov-hover);
+  border-color: #087E83;
+  transform: translateY(-2px);
+}
+
+.info-card__image {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-color: #F1F5F9;
+}
+
+.info-card__body {
+  padding: 22px;
+}
+
+.info-card__icon {
+  color: #087E83;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: #EAF4F3;
+  border-radius: 4px;
+  border: 1px solid rgba(8, 126, 131, 0.2);
+}
+
+.info-card__number {
+  font-family: var(--font-gov-heading);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #087E83;
+  opacity: 0.35;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.info-card__title {
+  font-family: var(--font-gov-body);
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0B2340;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.info-card__desc {
+  font-size: 0.88rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.info-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-gov-body);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #087E83 !important;
+  text-decoration: none !important;
+  margin-top: 14px;
+  transition: gap 0.2s ease;
+}
+
+.info-card__link:hover {
+  gap: 10px;
+  color: #0B2340 !important;
+}
+
+/* Variants */
+.info-card--bordered {
+  border-left: 4px solid #0B2340;
+}
+
+.info-card--bordered:hover {
+  border-left-color: #F28C28;
+}
+
+.info-card--filled {
+  background: #EAF4F3;
+  border-color: rgba(8, 126, 131, 0.25);
+}
+
+.info-card--navy {
+  background: #0B2340;
+  border-color: #071A30;
+}
+
+.info-card--navy .info-card__title {
+  color: #FFFFFF;
+}
+
+.info-card--navy .info-card__desc {
+  color: #CBD5E1;
+}
+
+.info-card--navy .info-card__icon {
+  background: rgba(255, 153, 51, 0.15);
+  color: #FF9933;
+}

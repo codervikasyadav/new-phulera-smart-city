@@ -1,0 +1,337 @@
+/* Distance Overview */
+.distance-overview {
+  background: #FFFFFF;
+  margin-top: -30px;
+  position: relative;
+  z-index: 10;
+}
+
+.distance-overview__card {
+  background: #0B2340;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(11, 35, 64, 0.15);
+}
+
+.distance-overview__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.distance-overview__icon {
+  color: #087E83;
+}
+
+.distance-overview__title {
+  color: #FFFFFF;
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.distance-overview__sub {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.85rem;
+  margin: 4px 0 0 0;
+}
+
+.distance-pills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.distance-pill {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.distance-pill:hover {
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-2px);
+}
+
+.distance-pill__place {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.distance-pill__value {
+  color: #F28C28;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+.distance-pill--jaipur {
+  border-color: rgba(242, 140, 40, 0.4);
+}
+
+.distance-overview__footer {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.distance-overview__footer p {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.75rem;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Dobri Pillars */
+.dobri-pillars {
+  background: #FFFFFF;
+}
+
+.dobri-card {
+  background: #FFFFFF;
+  border: 1px solid #DCE3E9;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(11, 35, 64, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dobri-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(11, 35, 64, 0.08);
+}
+
+.dobri-card__icon-box {
+  width: 48px;
+  height: 48px;
+  background: #EAF4F3;
+  color: #087E83;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.dobri-card__title {
+  font-size: 1.2rem;
+  color: #0B2340;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.dobri-card__desc {
+  font-size: 0.92rem;
+  color: #5A6E82;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.dobri-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #087E83;
+  padding-top: 16px;
+  border-top: 1px solid #DCE3E9;
+}
+
+/* Gallery Section */
+.gallery-section {
+  background: #F5F7F9;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.gallery-card {
+  background: #FFFFFF;
+  border: 1px solid #DCE3E9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(11, 35, 64, 0.04);
+}
+
+.gallery-card__visual {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.gallery-card__visual--1 {
+  background: linear-gradient(135deg, #102F50 0%, #087E83 100%);
+}
+
+.gallery-card__visual--2 {
+  background: linear-gradient(135deg, #087E83 0%, #205E61 100%);
+}
+
+.gallery-card__visual--3 {
+  background: linear-gradient(135deg, #0B2340 0%, #24364B 100%);
+}
+
+.gallery-card__caption {
+  padding: 24px;
+}
+
+.gallery-card__caption h4 {
+  font-size: 1.05rem;
+  color: #0B2340;
+  margin-bottom: 8px;
+}
+
+.gallery-card__caption p {
+  font-size: 0.85rem;
+  color: #5A6E82;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Nearby Section */
+.nearby-section {
+  background: #FFFFFF;
+}
+
+.nearby-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.nearby-item {
+  background: #FFFFFF;
+  border: 1px solid #DCE3E9;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.2s ease;
+}
+
+.nearby-item:hover {
+  border-color: #087E83;
+  box-shadow: 0 4px 12px rgba(11, 35, 64, 0.06);
+}
+
+.nearby-item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.nearby-item__name {
+  font-size: 1.1rem;
+  color: #0B2340;
+  margin: 0;
+}
+
+.nearby-item__dir {
+  font-size: 0.75rem;
+  color: #8899AA;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nearby-item__dist-badge {
+  background: #EAF4F3;
+  color: #087E83;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.nearby-item__desc {
+  font-size: 0.82rem;
+  color: #5A6E82;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Map Section */
+.map-section {
+  background: #F5F7F9;
+}
+
+.map-container {
+  background: #FFFFFF;
+  border: 1px solid #DCE3E9;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(11, 35, 64, 0.05);
+}
+
+.map-frame {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.map-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #DCE3E9;
+}
+
+.map-actions__info {
+  font-size: 0.9rem;
+  color: #24364B;
+}
+
+.map-note {
+  font-size: 0.75rem;
+  color: #8899AA;
+  font-style: italic;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .distance-pills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nearby-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .distance-pills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .nearby-grid {
+    grid-template-columns: 1fr;
+  }
+  .map-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

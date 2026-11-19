@@ -1,0 +1,199 @@
+/* Notice Strip */
+.notice-strip {
+  background: #0B2340;
+  border-bottom: 2px solid #087E83;
+  padding: 18px 0;
+}
+
+.notice-strip__box {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.notice-strip__icon {
+  color: #F28C28;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.notice-strip__content strong {
+  display: block;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.notice-strip__content p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Sources Section */
+.sources-section {
+  background: #FFFFFF;
+}
+
+.sources-grid {
+  margin-top: 32px;
+}
+
+/* Status Matrix */
+.classification-section {
+  background: #F5F7F9;
+}
+
+.status-grid {
+  margin-top: 32px;
+}
+
+.status-card {
+  background: #FFFFFF;
+  border: 1px solid #DCE3E9;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.status-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(11, 35, 64, 0.08);
+}
+
+.status-card__badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.status-card--operational .status-card__badge {
+  background: #E6F4EA;
+  color: #137333;
+}
+
+.status-card--sanctioned .status-card__badge {
+  background: #EAF4F3;
+  color: #087E83;
+}
+
+.status-card--construction .status-card__badge {
+  background: #FEF7E0;
+  color: #B06000;
+}
+
+.status-card--proposed .status-card__badge {
+  background: #FCE8E6;
+  color: #C5221F;
+}
+
+.status-card__title {
+  font-size: 1.1rem;
+  color: #0B2340;
+  margin-bottom: 8px;
+}
+
+.status-card__desc {
+  font-size: 0.85rem;
+  color: #5A6E82;
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 16px;
+}
+
+.status-card__risk {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #8899AA;
+  border-top: 1px solid #DCE3E9;
+  padding-top: 12px;
+}
+
+/* Arteries Grid */
+.arteries-section {
+  background: #FFFFFF;
+}
+
+.arteries-grid {
+  margin-top: 32px;
+}
+
+.artery-card {
+  background: #FAFCFD;
+  border: 1px solid #DCE3E9;
+  border-radius: 8px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.artery-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.artery-card__icon {
+  color: #087E83;
+}
+
+.artery-card__header h3 {
+  font-size: 1.15rem;
+  color: #0B2340;
+  margin: 0;
+}
+
+.artery-card__lead {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #087E83;
+  margin-bottom: 16px;
+}
+
+.artery-card__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.artery-card__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.88rem;
+  color: #24364B;
+  line-height: 1.5;
+}
+
+.artery-card__list li svg {
+  color: #087E83;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .status-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .status-grid {
+    grid-template-columns: 1fr;
+  }
+  .notice-strip__box {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

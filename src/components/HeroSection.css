@@ -1,0 +1,420 @@
+/* Government Hero Section */
+.gov-hero {
+  position: relative;
+  background: linear-gradient(135deg, #071A30 0%, #0B2340 50%, #102F50 100%);
+  color: #FFFFFF;
+  padding: 56px 0 44px;
+  overflow: hidden;
+  border-bottom: 3.5px solid #FF9933;
+}
+
+.gov-hero--large {
+  padding: 64px 0 48px;
+}
+
+/* Sovereign Watermark & Glow */
+.gov-hero__watermark {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.1) 1.2px, transparent 1.2px),
+    radial-gradient(rgba(255, 255, 255, 0.05) 1.2px, transparent 1.2px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.gov-hero__gradient-glow {
+  position: absolute;
+  top: -80px;
+  right: -50px;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 153, 51, 0.12) 0%, rgba(8, 126, 131, 0.18) 45%, transparent 70%);
+  pointer-events: none;
+}
+
+.gov-hero__container {
+  position: relative;
+  z-index: 2;
+}
+
+.gov-hero__row {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 36px;
+  align-items: center;
+}
+
+/* Left Hero Content */
+.gov-hero__tag-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 153, 51, 0.14);
+  border: 1px solid rgba(255, 153, 51, 0.4);
+  border-left: 3.5px solid #FF9933;
+  padding: 5px 12px;
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+
+.gov-hero__badge-dot {
+  width: 7px;
+  height: 7px;
+  background: #FF9933;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #FF9933;
+}
+
+.gov-hero__badge-hindi {
+  font-family: var(--font-gov-hindi);
+  font-size: 0.75rem;
+  color: #FFB366;
+  font-weight: 700;
+}
+
+.gov-hero__badge-divider {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 0.7rem;
+}
+
+.gov-hero__badge-text {
+  font-family: var(--font-gov-body);
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
+
+.gov-hero__hindi-title {
+  font-family: var(--font-gov-hindi);
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #FBBF24;
+  line-height: 1.25;
+  margin-bottom: 4px;
+  letter-spacing: 0.3px;
+}
+
+.gov-hero__title {
+  font-family: var(--font-gov-heading);
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.15;
+  letter-spacing: 0.6px;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.gov-hero--large .gov-hero__title {
+  font-size: 2.85rem;
+}
+
+.gov-hero__subtitle {
+  font-family: var(--font-gov-body);
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #FF9933;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  line-height: 1.35;
+}
+
+.gov-hero__desc {
+  font-size: 0.98rem;
+  color: #CBD5E1;
+  line-height: 1.65;
+  max-width: 620px;
+  margin-bottom: 22px;
+}
+
+.gov-hero__buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Statutory Note Strip at bottom of Hero left */
+.gov-hero__statutory-note {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(11, 35, 64, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-left: 3px solid #F59E0B;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  color: #E2E8F0;
+  line-height: 1.4;
+  max-width: 620px;
+}
+
+.gov-hero__statutory-icon {
+  color: #F59E0B;
+  flex-shrink: 0;
+}
+
+/* Right Side: e-Services Window (Signature Element of Indian Government Sites) */
+.gov-hero__side {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gov-eservices-window {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-top: 4px solid #FF9933;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  width: 100%;
+  max-width: 420px;
+  overflow: hidden;
+}
+
+.gov-eservices-window__head {
+  background: #0B2340;
+  color: #FFFFFF;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid #D4AF37;
+}
+
+.gov-eservices-head-icon {
+  width: 32px;
+  height: 32px;
+  background: #102F50;
+  border: 1px solid #D4AF37;
+  color: #FF9933;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.gov-eservices-title {
+  font-family: var(--font-gov-body);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.6px;
+  color: #FFFFFF;
+  display: block;
+  line-height: 1.2;
+}
+
+.gov-eservices-hindi {
+  font-family: var(--font-gov-hindi);
+  font-size: 0.68rem;
+  color: #FF9933;
+  display: block;
+  font-weight: 600;
+}
+
+.gov-eservices-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.gov-eservice-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 16px;
+  border-bottom: 1px solid #E2E8F0;
+  text-decoration: none !important;
+  color: #1E293B !important;
+  background: #FFFFFF;
+  transition: all 0.15s ease;
+}
+
+.gov-eservice-item:last-child {
+  border-bottom: none;
+}
+
+.gov-eservice-item:hover {
+  background: #F8FAFC;
+  padding-left: 19px;
+  border-left: 3px solid #FF9933;
+}
+
+.gov-eservice-item:hover .gov-eservice-arrow {
+  color: #0B2340;
+  transform: translateX(3px);
+}
+
+.gov-eservice-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.gov-eservice-icon-wrap.icon-blue {
+  background: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  color: #1D4ED8;
+}
+
+.gov-eservice-icon-wrap.icon-orange {
+  background: #FFF7ED;
+  border: 1px solid #FED7AA;
+  color: #C2410C;
+}
+
+.gov-eservice-icon-wrap.icon-teal {
+  background: #F0FDFA;
+  border: 1px solid #99F6E4;
+  color: #0F766E;
+}
+
+.gov-eservice-icon-wrap.icon-green {
+  background: #F0FDF4;
+  border: 1px solid #BBF7D0;
+  color: #15803D;
+}
+
+.gov-eservice-icon-wrap.icon-gold {
+  background: #FEFCE8;
+  border: 1px solid #FEF08A;
+  color: #A16207;
+}
+
+.gov-eservice-info {
+  flex-grow: 1;
+}
+
+.gov-eservice-name {
+  font-family: var(--font-gov-body);
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #0B2340;
+  display: block;
+  line-height: 1.25;
+}
+
+.gov-eservice-sub {
+  font-size: 0.7rem;
+  color: #64748B;
+  display: block;
+  line-height: 1.3;
+}
+
+.gov-eservice-arrow {
+  color: #94A3B8;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+
+.gov-eservices-foot {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #F1F5F9;
+  border-top: 1px solid #E2E8F0;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #087E83;
+}
+
+/* 4 Panels Grid at Bottom of Hero */
+.gov-hero__panels {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.gov-hero-panel-card {
+  background: rgba(16, 47, 80, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-left: 3.5px solid #FF9933;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  transition: all 0.2s ease;
+}
+
+.gov-hero-panel-card:hover {
+  background: rgba(16, 47, 80, 0.95);
+  border-left-color: #F28C28;
+  transform: translateY(-2px);
+}
+
+.gov-hero-panel-card__icon {
+  color: #FF9933;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.gov-hero-panel-card__content {
+  flex-grow: 1;
+}
+
+.gov-hero-panel-card__title {
+  font-family: var(--font-gov-body);
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.gov-hero-panel-card__desc {
+  font-size: 0.75rem;
+  color: #CBD5E1;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .gov-hero__row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .gov-hero__side {
+    justify-content: flex-start;
+  }
+  .gov-eservices-window {
+    max-width: 100%;
+  }
+  .gov-hero__panels {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gov-hero {
+    padding: 36px 0 28px;
+  }
+  .gov-hero__title {
+    font-size: 1.95rem;
+  }
+  .gov-hero--large .gov-hero__title {
+    font-size: 2.15rem;
+  }
+  .gov-hero__hindi-title {
+    font-size: 1.15rem;
+  }
+  .gov-hero__subtitle {
+    font-size: 0.82rem;
+  }
+  .gov-hero__panels {
+    grid-template-columns: 1fr;
+  }
+}
