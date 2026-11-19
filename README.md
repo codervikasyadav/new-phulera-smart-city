@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# New Phulera Smart City (न्यू फुलेरा स्मार्ट सिटी)
+### Official-Style Regional Development, Infrastructure & Land Investment Portal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> **"SMART GROWTH. STRONGER TOMORROW." (सतत विकास • सुदृढ़ कल)**  
+> *Regional Development | Infrastructure | Rail Freight Corridor (WDFC) | Investment Research*
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🏛 Project Overview
 
-### `npm start`
+**New Phulera Smart City** is an institutional-grade, authentic Indian Public Authority-styled (GIGW 3.0 / NIC standard) web portal for regional infrastructure research, cadastral land intelligence, and long-term investment evaluation across the **Phulera, Dobri, Dudu, Sambhar, and Bichoon** growth corridor in Rajasthan, India.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The portal provides investors, institutions, and citizens with verifiable statutory records, cadastral due diligence frameworks, distance matrices with authentic Indian highway milestones, and direct access to state government repositories.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🇮🇳 Authentic Indian Government Design System (GIGW 3.0)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Built in strict alignment with the **Guidelines for Indian Government Websites (GIGW v3.0)**:
+* **Sovereign Authority Crest**: Dual gold concentric rings with beaded detailing, 24-spoke Ashoka Chakra wheel, flanking golden wheat sheaves, WDFC railway crossing, and *Satyameva Jayate* plinth in Devanagari.
+* **National Initiative Badges**: Iconic SVG representations for:
+  * **Swachh Bharat Abhiyan** (*एक कदम स्वच्छता की ओर*)
+  * **Digital India** (*Power To Empower*)
+  * **Viksit Bharat @ 2047 / Viksit Rajasthan**
+* **Accessibility Toolbar**: Text sizing (`A-`, `A`, `A+`), High Contrast mode, Interactive English/हिन्दी toggle, and live Indian Standard Time (IST) clock.
+* **Flash News Marquee (सूचना पट्ट)**: Real-time scrolling statutory notices with pause/play controls.
+* **Executive Proclamation (अध्यक्षीय संदेश)**: NIC-style leadership desk card.
+* **Citizen e-Services Window (नागरिक एवं निवेशक ई-सेवाएं)**: 6 quick-service tiles for land records, WDFC freight updates, RIICO sanctions, Section 90-A conversion guide, Dobri spotlight, and help desk.
+* **Highway Milestones (मील का पत्थर)**: Authentic curved-top milestones for NH-48 (Dudu 7 km\*, Jaipur 60 km\*) and State Highways (Phulera 31 km\*, Sambhar 38 km\*, Malpura 30 km\*).
+* **Official Gazette Registry**: NIC tabular circulars table with PDF downloads and issuing ministry citations.
+* **Citizen Help Desk**: Dual official hotlines **`+91 92184 67515`** and **`+91 79056 02136`** with WhatsApp integration.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🗺️ Portal Navigation & Routes
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Route | Hindi Title | Purpose |
+| :--- | :--- | :--- |
+| `/` | मुख्य पृष्ठ | Regional overview, e-Services, Gazette archive, Jaipur vs Phulera, 5-10 year horizon |
+| `/phulera-smart-city` | फुलेरा विजन | Five Pillars of Smart Growth, WDFC context, decentralized Jaipur expansion |
+| `/dobri` | दोबरी क्षेत्र | Spotlight micro-market, NH-48 milestones, 4 evaluation pillars, topography, nearby towns |
+| `/infrastructure` | अवसंरचना एवं WDFC | 4 official government sources, status matrix, transport artery breakdowns |
+| `/investment-guide` | निवेश मार्गदर्शिका | 6 methodical steps, 8 revenue documents checklist, 6 risk factors, 7 broker questions |
+| `/research` | राजपत्र व स्रोत | Verified source cards, state land portals directory (Apna Khata, RIICO, DFCCIL, IGRS) |
+| `/enquiry` | नागरिक सहायता डेस्क | Public enquiry form with Indian mobile validation, WhatsApp, direct helpline desk |
+| `/privacy` | गोपनीयता नीति | GIGW-compliant citizen data privacy policy and grievance officer declaration |
+| `/disclaimer` | विधिक अस्वीकरण | Statutory transparency disclosure, non-government affiliation notice |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📑 Verified Statutory Sources & Citations
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **DFCCIL (Ministry of Railways, GoI)**:  
+   *Trial Run with 100 kmph Speed on Ateli–Phulera Section (Western DFC)*  
+   [View DFCCIL Press Release](https://dfccil.com/upload/DFCCIL_Press_Release_English_Trial_Run_with_100_kmph_max_speed_27_03_18.pdf)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **RIICO (Govt of Rajasthan)**:  
+   *Revised Administrative Sanction for Development of Industrial Area Phulera (2026)*  
+   [View RIICO Orders](https://riico.rajasthan.gov.in/Orders.aspx)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Urban Development & Housing Department (Govt of Rajasthan)**:  
+   *Field Inspection for Manda, Phulera and Bichoon Logistics Opportunities*  
+   [View Official Press Release](https://urban.rajasthan.gov.in/press-release/948/174452)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **RIICO Bichoon Notification**:  
+   *Bichoon Industrial Area (185 Hectares) Allotment & Regional Planning*  
+   [View RIICO Notification](https://riico.rajasthan.gov.in/Notification.aspx?menu_id=19)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📞 Citizen Help Desk & Contact Information
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* **Primary Help Desk Hotline**: `+91 92184 67515`
+* **Secondary Hotline**: `+91 79056 02136`
+* **WhatsApp Desk**: `+91 92184 67515`
+* **Email**: `enquiry@newphulerasmartcity.in`
+* **Working Hours**: Monday – Saturday: 10:00 AM – 06:00 PM (IST)
+* **Regional Coverage**: Phulera • Dobri • Dudu • Sambhar • Bichoon, Jaipur District, Rajasthan, India
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Technology Stack
 
-### Analyzing the Bundle Size
+* **Frontend**: React 18, React Router v6
+* **Icons**: Lucide React
+* **Typography**: Merriweather (Serif Headings), Source Sans 3 / Inter (Body), Noto Sans Devanagari (Hindi)
+* **Styling**: Pure CSS3 with Custom Properties (Government Sovereign Navy & Saffron design system)
+* **Compliance**: GIGW v3.0, W3C WCAG 2.1 AA accessibility guidelines
+* **Build Tool**: Create React App (`react-scripts`)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🚀 Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Prerequisites
+* Node.js (v16+ recommended)
+* npm or yarn
 
-### Advanced Configuration
+### Installation & Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+# Clone the repository
+git clone https://github.com/codervikasyadav/new-phulera-smart-city.git
 
-### Deployment
+# Navigate to project directory
+cd new-phulera-smart-city
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Install dependencies
+npm install
 
-### `npm run build` fails to minify
+# Start local development server
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Production Build
+
+```bash
+npm run build
+```
+Creates an optimized, production-ready build in the `build/` directory ready for deployment to Vercel, Netlify, AWS S3/CloudFront, or any static hosting server.
+
+---
+
+## ⚖️ Statutory Legal Disclosure
+
+*'New Phulera Smart City' is an independent regional research and investment evaluation portal. This website does NOT represent an official portal of the Government of India, Government of Rajasthan, RIICO, or the central Smart Cities Mission (MoHUA). Infrastructure creates possibilities, not guaranteed property returns. All property transactions require independent verification of title on Apna Khata (E-Dharti), physical road width, and Section 90-A conversion before financial commitment.*
