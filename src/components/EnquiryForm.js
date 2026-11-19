@@ -30,6 +30,7 @@ export default function EnquiryForm({ defaultLocation }) {
   });
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState('idle'); // idle, loading, success, error
+  const [errorMessage, setErrorMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   const validateForm = () => {
@@ -68,14 +69,31 @@ export default function EnquiryForm({ defaultLocation }) {
     if (!validateForm()) return;
     
     setStatus('loading');
-    setSubmitted(true);
+    setErrorMessage('');
     
-    console.log('Enquiry Data Submitted:', formData);
-    
-    // Simulate API call
-    setTimeout(() => {
-      setStatus('success');
-    }, 1200);
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (response.ok && data.success) {
+        setStatus('success');
+        setSubmitted(true);
+      } else {
+        setStatus('error');
+        setErrorMessage(data.message || 'पूछताछ भेजने में असमर्थ। कृपया सीधे कॉल या व्हाट्सएप करें।');
+      }
+    } catch (err) {
+      console.error('Error submitting enquiry form:', err);
+      setStatus('error');
+      setErrorMessage('नेटवर्क त्रुटि या सर्वर अनुपलब्ध। कृपया सीधे फोन या व्हाट्सएप पर संपर्क करें।');
+    }
   };
 
   const handleChange = (e) => {
@@ -92,13 +110,21 @@ export default function EnquiryForm({ defaultLocation }) {
         <CheckCircle size={44} color="#10B981" />
         <h3 style={{ color: '#0B2340', margin: '8px 0 4px' }}>पूछताछ सफलतापूर्वक दर्ज की गई!</h3>
         <p style={{ fontSize: '0.85rem', color: '#475569' }}>
-          आपकी पूछताछ क्षेत्रीय अनुसंधान डेस्क को प्राप्त हो गई है। हमारी टीम शीघ्र ही आपसे संपर्क करेगी।
+          आपकी पूछताछ क्षेत्रीय अनुसंधान डेस्क को प्राप्त हो गई है और ईमेल द्वारा भेज दी गई है। हमारी टीम शीघ्र ही आपसे संपर्क करेगी।
         </p>
         <button
           onClick={() => {
             setStatus('idle');
             setSubmitted(false);
-            setFormData({ name: '', mobile: '', email: '', interest: '', propertyType: '', message: '' });
+            setErrorMessage('');
+            setFormData({
+              name: '',
+              mobile: '',
+              email: '',
+              interest: '',
+              propertyType: defaultLocation ? `${defaultLocation} Corridor` : '',
+              message: ''
+            });
           }}
           className="btn btn-gov-outline"
           style={{ marginTop: '12px', fontSize: '0.8rem' }}
@@ -223,7 +249,7 @@ export default function EnquiryForm({ defaultLocation }) {
         {status === 'error' && (
           <div className="enquiry-form__error-msg">
             <AlertCircle size={16} />
-            <p>पूछताछ भेजने में असमर्थ। कृपया सीधे कॉल या व्हाट्सएप करें।</p>
+            <p>{errorMessage || 'पूछताछ भेजने में असमर्थ। कृपया सीधे कॉल या व्हाट्सएप करें।'}</p>
           </div>
         )}
       </form>
