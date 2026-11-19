@@ -121,6 +121,26 @@ Creates an optimized, production-ready build in the `build/` directory ready for
 
 ---
 
+## ⚡ Vercel Deployment & Resend API Key Setup
+
+This portal includes a **Vercel Serverless Function** (`/api/send-email`) integrated with the official **Resend Email API** to forward citizen inquiries directly to your email.
+
+### Deploying to Vercel:
+1. Push your repository to GitHub (already linked to `codervikasyadav/new-phulera-smart-city`).
+2. Log in to [Vercel](https://vercel.com) and click **"Add New Project"** -> **"Import Git Repository"**.
+3. Select `new-phulera-smart-city`.
+4. In **Project Settings** -> **Environment Variables**, add the following:
+
+| Variable Name | Required | Example / Recommended Value | Description |
+| :--- | :--- | :--- | :--- |
+| `RESEND_API_KEY` | **Yes** | `re_1234567890abcdef...` | Your Resend API key from [resend.com/api-keys](https://resend.com/api-keys) |
+| `RESEND_FROM_EMAIL` | Optional | `New Phulera Smart City <onboarding@resend.dev>` | Sender email. Use `onboarding@resend.dev` for testing, or your verified domain e.g. `enquiry@newphulerasmartcity.in` |
+| `NOTIFICATION_EMAIL` | Optional | `enquiry@newphulerasmartcity.in` | Inbox where enquiry alert emails will be delivered |
+
+5. Click **Deploy**. Vercel will automatically build the React SPA and serve the serverless API at `/api/send-email`.
+
+---
+
 ## ⚖️ Statutory Legal Disclosure
 
 *'New Phulera Smart City' is an independent regional research and investment evaluation portal. This website does NOT represent an official portal of the Government of India, Government of Rajasthan, RIICO, or the central Smart Cities Mission (MoHUA). Infrastructure creates possibilities, not guaranteed property returns. All property transactions require independent verification of title on Apna Khata (E-Dharti), physical road width, and Section 90-A conversion before financial commitment.*
