@@ -1,3 +1,7 @@
+# Robots.txt for New Phulera Smart City (https://newphulerasmartcity.in)
+User-agent: Googlebot
+Allow: /
+
 User-agent: *
 Allow: /
 

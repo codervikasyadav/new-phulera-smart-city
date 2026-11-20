@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MobileBottomBar from './components/MobileBottomBar';
 import ScrollToTop from './components/ScrollToTop';
+import CanonicalManager from './components/CanonicalManager';
 import { LanguageProvider } from './context/LanguageContext';
 import Home from './pages/Home';
 import PhuleraSmartCity from './pages/PhuleraSmartCity';
@@ -22,6 +23,7 @@ function App() {
     <LanguageProvider>
       <Router>
         <ScrollToTop />
+        <CanonicalManager />
         <div className="App">
           <Header />
           <main className="page-content">
