@@ -335,3 +335,24 @@
     gap: 16px;
   }
 }
+
+@media (max-width: 480px) {
+  .distance-overview__card {
+    padding: 18px 14px;
+  }
+  .distance-pills-grid {
+    gap: 8px;
+  }
+  .distance-pill {
+    padding: 10px 6px;
+  }
+  .distance-pill__place {
+    font-size: 0.75rem;
+  }
+  .distance-pill__value {
+    font-size: 1.15rem;
+  }
+  .map-container {
+    padding: 14px 10px;
+  }
+}

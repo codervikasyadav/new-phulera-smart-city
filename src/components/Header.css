@@ -71,6 +71,10 @@
   letter-spacing: 0.3px;
 }
 
+.gov-utility-bar__portal-title-mobile {
+  display: none;
+}
+
 .gov-utility-bar__divider {
   color: rgba(255, 255, 255, 0.25);
   font-size: 0.7rem;
@@ -806,6 +810,11 @@
   z-index: 1040;
 }
 
+/* Mobile Header Actions (Hidden on Desktop) */
+.gov-mobile-header-actions {
+  display: none;
+}
+
 /* Responsive Breakpoints */
 @media (max-width: 1200px) {
   .gov-national-badges {
@@ -831,27 +840,179 @@
 }
 
 @media (max-width: 768px) {
+  /* 1. Utility Bar */
   .gov-utility-bar__left .gov-utility-bar__portal-title,
   .gov-utility-bar__divider,
-  .gov-utility-bar__skip {
-    display: none;
+  .gov-utility-bar__skip,
+  .gov-accessibility-controls,
+  .gov-contrast-btn,
+  .gov-datetime {
+    display: none !important;
   }
+
+  .gov-utility-bar__portal-title-mobile {
+    display: inline-block;
+    color: #E2E8F0;
+    font-size: 0.68rem;
+    font-weight: 600;
+  }
+
+  .gov-utility-bar__inner {
+    padding: 2px 0;
+  }
+
+  /* 2. Top Strip */
   .gov-top-strip p {
-    font-size: 0.65rem;
-    letter-spacing: 0.8px;
+    font-size: 0.62rem;
+    letter-spacing: 0.5px;
+    line-height: 1.35;
   }
+
+  /* 3. Masthead */
+  .gov-masthead {
+    padding: 8px 0;
+  }
+
+  .gov-masthead__inner {
+    gap: 8px;
+  }
+
+  .gov-brand {
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 8px;
+    max-width: calc(100% - 130px);
+  }
+
+  .gov-emblem-wrap {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+
+  .gov-brand-titles {
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .gov-brand-hindi-top {
+    font-size: 0.68rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    line-height: 1.2;
+  }
+
+  .gov-brand-name {
+    font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.15;
+  }
+
   .gov-brand-hindi-sub,
   .gov-brand-tagline-wrap {
+    display: none !important;
+  }
+
+  .gov-helpline-box {
+    display: none !important;
+  }
+
+  /* Mobile Quick Actions in Header */
+  .gov-mobile-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .gov-mobile-head-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 9px;
+    border-radius: 4px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-decoration: none !important;
+  }
+
+  .gov-mobile-head-call {
+    background: #0B2340;
+    color: #FFFFFF !important;
+    border: 1px solid #102F50;
+  }
+
+  .gov-mobile-head-call:hover {
+    background: #FF9933;
+    color: #0B2340 !important;
+  }
+
+  .gov-mobile-head-wa {
+    background: #25D366;
+    color: #FFFFFF !important;
+    padding: 6px 8px;
+  }
+
+  .gov-mobile-toggle {
+    padding: 6px;
+    width: 36px;
+    height: 36px;
+  }
+
+  /* 4. Flash News Ticker */
+  .gov-ticker__inner {
+    padding: 4px 0;
+    gap: 8px;
+  }
+
+  .gov-ticker__label {
+    padding: 3px 6px;
+    font-size: 0.65rem;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  .gov-ticker__label span {
+    font-size: 0.65rem;
+  }
+
+  .gov-ticker__text {
+    font-size: 0.72rem;
+  }
+
+  .gov-ticker__controls .gov-ticker__more {
     display: none;
   }
+
+  .gov-ticker-ctrl-btn {
+    padding: 2px 4px;
+  }
+
+  /* 5. Mobile Drawer */
+  .gov-mobile-drawer {
+    width: min(300px, 85vw);
+  }
+}
+
+@media (max-width: 480px) {
   .gov-brand-name {
-    font-size: 1.15rem;
+    font-size: 0.95rem;
+  }
+  .gov-brand-hindi-top {
+    font-size: 0.62rem;
   }
   .gov-emblem-wrap {
-    width: 52px;
-    height: 52px;
+    width: 38px;
+    height: 38px;
   }
-  .gov-helpline-box {
+  .gov-mobile-head-call span {
     display: none;
+  }
+  .gov-mobile-head-call {
+    padding: 6px 7px;
   }
 }

@@ -400,3 +400,27 @@
     align-items: flex-start;
   }
 }
+
+@media (max-width: 480px) {
+  .gov-footer-main {
+    padding: 28px 0 16px;
+  }
+  .gov-footer-title {
+    font-size: 1.1rem;
+  }
+  .gov-footer-hindi-title {
+    font-size: 0.78rem;
+  }
+  .gov-footer-desc {
+    font-size: 0.78rem;
+  }
+  .gov-footer-loc {
+    font-size: 0.74rem;
+  }
+  .gov-footer-bottom {
+    padding: 12px 0 6px 0;
+  }
+  .gov-footer-bottom p {
+    font-size: 0.7rem;
+  }
+}

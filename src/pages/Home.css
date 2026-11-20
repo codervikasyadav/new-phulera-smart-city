@@ -992,18 +992,113 @@
 }
 
 @media (max-width: 768px) {
-  .gov-stats-grid {
-    grid-template-columns: 1fr 1fr;
+  /* Public Advisory Bar */
+  .gov-public-advisory-bar__inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
-  .citizen-services-grid {
+
+  /* Executive Desk Message */
+  .gov-executive-box {
     grid-template-columns: 1fr;
   }
-  .gov-milestones-row {
+  .gov-executive-box__left {
+    padding: 20px 16px;
+  }
+  .gov-executive-box__right {
+    padding: 20px 16px;
+  }
+  .gov-exec-quote {
+    font-size: 0.85rem;
+    line-height: 1.55;
+  }
+
+  /* Stats Grid */
+  .gov-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  /* Citizen Services */
+  .citizen-services-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  /* Notice Board & Gazette Table */
+  .gov-notice-board__header {
+    padding: 14px 16px;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .gov-notice-board__filter-tabs {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 6px;
+  }
+  .gov-filter-tab {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 6px 8px;
+    font-size: 0.72rem;
   }
   .gov-table th, .gov-table td {
     padding: 8px 10px;
     font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  /* Milestones */
+  .gov-milestones-container {
+    padding: 20px 14px;
+  }
+  .gov-milestones-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    justify-items: center;
+  }
+
+  /* Comparison Cards */
+  .gov-comp-card__header {
+    padding: 14px 16px;
+  }
+  .gov-comp-card__body {
+    padding: 14px 16px;
+  }
+
+  /* Helplines Card in Enquiry */
+  .gov-dh-line {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .gov-dh-line span {
+    width: auto;
+    min-width: 80px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .gov-stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .gov-stat-box {
+    padding: 10px 6px;
+  }
+  .gov-stat-box__value {
+    font-size: 1.15rem;
+  }
+  .gov-stat-box__title {
+    font-size: 0.6rem;
+  }
+  .gov-stat-box__desc {
+    font-size: 0.6rem;
+  }
+  .gov-milestones-row {
+    grid-template-columns: 1fr;
   }
 }

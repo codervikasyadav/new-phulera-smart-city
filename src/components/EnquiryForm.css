@@ -185,9 +185,12 @@
   align-items: center;
   justify-content: center;
   gap: 6px;
-  margin-top: 10px;
+  margin-top: 12px;
   font-size: 0.75rem;
   color: #64748B;
+  flex-wrap: wrap;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .enquiry-direct-calling-line a {

@@ -136,6 +136,9 @@ export default function Header() {
             <span className="gov-utility-bar__portal-title">
               सार्वजनिक क्षेत्रीय विकास एवं निवेश अनुसंधान प्रकोष्ठ | Public Regional Infrastructure Portal
             </span>
+            <span className="gov-utility-bar__portal-title-mobile">
+              क्षेत्रीय विकास पोर्टल (GoI GIGW)
+            </span>
             <span className="gov-utility-bar__divider">|</span>
             <a href="#main-content" className="gov-utility-bar__skip">
               मुख्य सामग्री पर जाएं (Skip to Main Content)
@@ -294,6 +297,27 @@ export default function Header() {
                 </a>
                 <span className="gov-hl-timing">(10 AM - 6 PM IST)</span>
               </div>
+            </div>
+
+            {/* Mobile Direct Quick Actions (Call & WhatsApp) */}
+            <div className="gov-mobile-header-actions">
+              <a
+                href="tel:+919218467515"
+                className="gov-mobile-head-btn gov-mobile-head-call"
+                title="कॉल सहायता केंद्र / Call Help Desk"
+              >
+                <Phone size={14} />
+                <span>कॉल</span>
+              </a>
+              <a
+                href="https://wa.me/919218467515?text=Hello%20Help%20Desk,%20I%20have%20an%20enquiry%20regarding%20Phulera%20Dobri%20land%20and%20infrastructure."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="gov-mobile-head-btn gov-mobile-head-wa"
+                title="व्हाट्सएप सहायता / WhatsApp Enquiry"
+              >
+                <MessageSquare size={14} />
+              </a>
             </div>
 
             {/* Mobile Menu Hamburger */}

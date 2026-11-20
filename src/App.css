@@ -7,3 +7,9 @@
 .page-content {
   flex: 1;
 }
+
+@media (max-width: 768px) {
+  .page-content {
+    padding-bottom: 64px; /* Clear space for sticky MobileBottomBar */
+  }
+}

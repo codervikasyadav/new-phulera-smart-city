@@ -1,0 +1,108 @@
+/* Desktop: Completely hidden */
+.gov-mobile-bottom-bar {
+  display: none;
+}
+
+/* Mobile: Fixed at bottom with high-contrast official Gov touch buttons */
+@media (max-width: 768px) {
+  .gov-mobile-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: #0B2340;
+    border-top: 3px solid #FF9933;
+    box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.28);
+    height: 56px;
+    align-items: stretch;
+  }
+
+  .gov-mbb-action {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 2px;
+    text-decoration: none !important;
+    color: #CBD5E1 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background 0.15s ease;
+  }
+
+  .gov-mbb-action:last-child {
+    border-right: none;
+  }
+
+  .gov-mbb-action:active {
+    background: #102F50;
+  }
+
+  .gov-mbb-icon {
+    margin-bottom: 2px;
+    flex-shrink: 0;
+  }
+
+  .gov-mbb-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  .gov-mbb-hi {
+    font-family: var(--font-gov-hindi);
+    font-size: 0.62rem;
+    font-weight: 700;
+  }
+
+  .gov-mbb-num,
+  .gov-mbb-sub {
+    font-family: var(--font-gov-body);
+    font-size: 0.62rem;
+    font-weight: 800;
+  }
+
+  /* Hotline 1 (Saffron theme) */
+  .gov-mbb-call-1 {
+    color: #FBBF24 !important;
+  }
+  .gov-mbb-call-1 .gov-mbb-icon {
+    color: #FF9933;
+  }
+
+  /* Hotline 2 (Sky blue theme) */
+  .gov-mbb-call-2 {
+    color: #38BDF8 !important;
+  }
+  .gov-mbb-call-2 .gov-mbb-icon {
+    color: #38BDF8;
+  }
+
+  /* WhatsApp (Green theme) */
+  .gov-mbb-wa {
+    background: #0F5132;
+    color: #FFFFFF !important;
+  }
+  .gov-mbb-wa .gov-mbb-icon {
+    color: #25D366;
+  }
+  .gov-mbb-wa .gov-mbb-hi {
+    color: #4ADE80;
+  }
+
+  /* Enquiry form */
+  .gov-mbb-form {
+    color: #E2E8F0 !important;
+  }
+  .gov-mbb-form .gov-mbb-icon {
+    color: #F59E0B;
+  }
+  .gov-mbb-form.active {
+    background: #102F50;
+    color: #FF9933 !important;
+  }
+}
